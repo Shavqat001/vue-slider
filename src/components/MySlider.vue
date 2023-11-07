@@ -1,5 +1,5 @@
 <template>
-<div class="box"></div>
+  <div class="box"></div>
   <div class="slider">
     <div class="front"></div>
     <div class="back"></div>
@@ -57,8 +57,7 @@ body {
   width: 400px;
   height: 400px;
   background: transparent;
-  transform: perspective(800px) rotateX(270deg) rotate(0deg)
-    translateZ(-150px);
+  transform: perspective(800px) rotateX(270deg) rotate(0deg) translateZ(-150px);
   transform-style: preserve-3d;
   transition: 500ms;
 }

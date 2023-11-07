@@ -5,21 +5,23 @@
 </template>
 
 <script>
-import MySlider from './components/MySlider.vue'
-// import ShowHide from "./components/ShowHide.vue";
-// import DynamicInput from "./components/DynamicInput.vue";
-// import ButtonAddInput from "./components/ButtonAddInput.vue";
+
+import MySlider from "./components/MySlider.vue";
+
 export default {
   components: {
     MySlider,
-    // ShowHide,
-    // DynamicInput,
-    // ButtonAddInput
   },
 };
+
 </script>
 
 <style>
+
+*::selection {
+  background: transparent;
+}
+
 body {
   width: 100%;
   height: 100vh;
@@ -29,9 +31,7 @@ body {
   margin: 0;
   font-family: sans-serif;
 }
-*::selection {
-  background: transparent;
-}
+
 input {
   border: none;
   border-bottom: 2px solid #ddd;
@@ -39,6 +39,7 @@ input {
   font-size: 20px;
   padding: 10px 15px;
 }
+
 button {
   padding: 7px 13px;
   border: none;
@@ -48,7 +49,9 @@ button {
   color: #fff;
   border-radius: 5px;
 }
+
 p {
   font-size: 17px;
 }
+
 </style>
